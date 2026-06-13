@@ -2,7 +2,7 @@
 
 An end-to-end Machine Learning and Data Analytics pipeline architecture designed to automate logistics invoice verification, audit supply chain transaction risks, and manage administrative alerts. This repository features production-grade modular components alongside an integrated automated email bot engine that handles alert escalation completely autonomously.
 
-🚀 **[Live Streamlit Web Application]([https://invoice-intelligence-portal.streamlit.app](https://invoice-intelligence-with-automated-email-bot-email-bkhifksjmr.streamlit.app/))**
+🚀 **[Live Streamlit Web Application]([https://invoice-intelligence-portal.streamlit.app](https://invoice-intelligence-with-automated-email-bot-email-bkhifksjmr.streamlit.app/)**
 
 ---
 

@@ -65,7 +65,11 @@ def send_automated_email(sender_email, sender_password, recipient_email, subject
     msg.attach(part)
     
     try:
-        server = smtplib.SMTP('smtp.gmail.com', 587)
+        # Pull server and port securely from secrets if available, else default to gmail
+        smtp_server = st.secrets.get("SMTP_SERVER", "smtp.gmail.com")
+        smtp_port = int(st.secrets.get("SMTP_PORT", 587))
+        
+        server = smtplib.SMTP(smtp_server, smtp_port)
         server.starttls()
         server.login(sender_email, sender_password)
         server.sendmail(sender_email, recipient_email, msg.as_string())
@@ -113,9 +117,9 @@ if st.session_state.processed_data is not None:
         # 2. Status Box
         st.sidebar.info("🤖 **Demo Mode: Active**\n\nRouting emails automatically via our pre-configured project mailbox.")
         
-        # Securely fetch background dummy credentials
-        user_sender = os.environ.get("DUMMY_SENDER_EMAIL")
-        user_pwd = os.environ.get("DUMMY_APP_PASSWORD")
+        # SECURELY FETCH BACKGROUND CREDENTIALS FROM STREAMLIT SECRETS (FALLBACK TO ENV)
+        user_sender = st.secrets.get("SENDER_EMAIL", os.environ.get("DUMMY_SENDER_EMAIL"))
+        user_pwd = st.secrets.get("SENDER_PASSWORD", os.environ.get("DUMMY_APP_PASSWORD"))
 
     st.sidebar.write("---")
     

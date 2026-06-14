@@ -2,8 +2,16 @@
 
 An end-to-end Machine Learning and Data Analytics pipeline architecture designed to automate logistics invoice verification, audit supply chain transaction risks, and manage administrative alerts. This repository features production-grade modular components alongside an integrated automated email bot engine that handles alert escalation completely autonomously.
 
-🚀 **[Live Streamlit Web Application]([https://invoice-intelligence-portal.streamlit.app](https://invoice-intelligence-with-automated-email-bot-email-bkhifksjmr.streamlit.app/)**
+🚀 **[Live Streamlit Web Application]([https://invoice-intelligence-portal.streamlit.app](https://invoice-intelligence-with-automated-email-bot-email-bkhifksjmr.streamlit.app/])**
 
+### 📈 Project Evolution
+
+This project was built iteratively to bridge the gap between basic data prototyping and production-ready analytics tools:
+
+* **Phase 1 (Baseline):** Core EDA, SQL relational modeling, and Scikit-Learn predictive pipelines. [Explore Phase 1 Repo](https://github.com/A-aniket-k/Invoice-Intelligence-Basic)
+* **Phase 2 (Scalability):** Added Pandas-driven bulk dataset processing and file uploading to handle corporate-scale data. [Explore Phase 2 Repo]([Link_to_Repo_2](https://github.com/A-aniket-k/Invoice-Intelligence))
+* **Phase 3 (Automation):** Integrated automated SMTP reporting loops to segment data and email actionable alerts. [Explore Phase 3 Repo]([Link_to_Repo_3](https://github.com/A-aniket-k/Invoice-Intelligence-With-Automated-Email-))
+* **Phase 4 (Current):** Optimized user onboarding with secure background bot authentication and live cloud deployment. [[Live Deployment Link](https://invoice-intelligence-with-automated-email-bot-email-bkhifksjmr.streamlit.app/])]
 ---
 
 ## 📌 Business Overview & Problem Statement
